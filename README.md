@@ -5,3 +5,7 @@ This Renpy project tries following Ronnie Rietman that tries selling a magical p
 These are development files. You will need to build the project and compile it to Windows, Linux or MacOS
 
 contains historic racism and nudity 
+
+##buy me bitcoin 🤪
+all bits help! 
+bc1qxnnk4rn253902hfhc262zmvjwgyc8v0ytckknz
