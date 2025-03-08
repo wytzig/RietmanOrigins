@@ -83,7 +83,7 @@ label start:
 
     rietman "What the—?! Blackies?"
 
-    show drake at Transform(zoom=1.5, xalign=1.0, yalign=1.0)
+    show drake at linker_onderhoek, Transform(zoom=1.5)
     buyer_drake "Ronnie? Who are you talking to?"
     hide drake
 
@@ -102,7 +102,7 @@ label start:
 
     hide blackies
     show drake at rechter_onderhoek
-    show rietman_cool at linkse_onderhoek
+    show rietman_cool at linker_onderhoek
     show blackies_peniskoker at truecenter
     shadow_man "Tell them, Ronnie. Tell them how you became a liquidator. A legend. A man feared in whispers."
 
