@@ -10,6 +10,26 @@ define buyer_drake = Character("Drake")
 define leib_weissman = Character("Leib Weissman")
 define terrorists = Character("Pieter and Mohammed")
 
+transform linker_bovenhoek:
+    anchor (0.0, 0.0)
+    xalign 0.0
+    yalign 0.0
+
+transform rechter_bovenhoek:
+    anchor (1.0, 0.0)
+    xalign 1.0
+    yalign 0.0
+
+transform linker_onderhoek:
+    anchor (0.0, 1.0)
+    xalign 0.0
+    yalign 1.0
+
+transform rechter_onderhoek:
+    anchor (1.0, 1.0)
+    xalign 1.0
+    yalign 1.0
+
 label start:
 
     scene bg painting
@@ -81,7 +101,7 @@ label start:
     buyer_kalimero "Wait, are you saying—?"
 
     hide blackies
-    show blackies_peniskoker at Transform(zoom=2, yalign=1.0, xalign=0.5)
+    show blackies_peniskoker at rechter_onderhoek
     shadow_man "Tell them, Ronnie. Tell them how you became a liquidator. A legend. A man feared in whispers."
 
     rietman "A master hustler, a dealmaker, a liquidator of both assets and... problems."
