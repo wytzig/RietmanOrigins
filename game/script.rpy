@@ -108,6 +108,7 @@ label start:
     show drake at rechter_onderhoek, Transform(zoom=2.0)
     show rietman_cool at linker_onderhoek
     show blackies_peniskoker at truecenter, Transform(zoom=2)
+    hide drake
     shadow_man "Tell them, Ronnie. Tell them how you became a liquidator. A legend. A man feared in whispers."
 
     rietman "A master hustler, a dealmaker, a liquidator of both assets and... problems."
@@ -119,13 +120,14 @@ label start:
     show kalimero
     buyer_kalimero "Tell us Rietman!"
     hide kalimero
-    show rietman_serious1 at linker_onderhoek
     hide rietman_cool
     rietman "I sold them"
     "..." with vpunch
+    show drake at rechter_onderhoek
     buyer_drake "you sold who? "
     rietman "them blackies"
     "..." with vpunch
+    hide drake
     rietman "it was not my proudest moment, but hearing their voices made me mad. "
     rietman "then I got a call from within to find and meet up with leib weissman again"
     rietman "I remember it like it was yesterday.."
@@ -133,7 +135,10 @@ label start:
     show bg old_ship
     hide blackies_peniskoker
     hide drake
+
     rietman "aye, you there!"
+    show leib at rechter_onderhoek
+    show y_rietman_bar at linker_onderhoek
     leib_weissman "... huh? me? what's happening grandpa?"
     rietman "oy voy! I am no grandpa but the one and only Ronnie R Rietman, .."
     rietman "trader... hustler..."
@@ -157,19 +162,21 @@ label start:
     rietman "we have a deal"
 
     "and so it began, Rietman would bring first the 2 'blackies' - as he would often call them, from his warehouse where he had stored the painting to the harbor where an eager youngh Leib would await them to put them on his newest ships. "
-    "the men... or evil sprits were promised lands of work, gold, fame and woman. But would often arrive in the new land not as men, but as animals"
+    show blackies_trade
+    "the men... or evil sprits... were promised lands of work, gold, fame and women. But would often arrive in the new land not as men, but as animals"
     "rietman prospered, but one day, leib was missing"
     "it seemed that all mention of his name did not bring no meaning to the people anymore"
     "but ronnie knew, he understood that his jewish hero would be sailing with them, finding a fountain in the new world and discover the power of eternal youth. "
     "if Rietman would be young again.. oh wat would he do"
 
-    show y_rietman_bar
+    hide blackies_trade
+    show y_rietman_bar at linker_onderhoek
 
-    "our yough Rietman, as brave, innocent of a trader as you could get it. Balls deep in shady deals"
+    "our young Rietman, as brave, innocent of a trader as you could get it. Balls deep in shady deals"
 
     hide y_rietman_bar
 
-    show drake
+    show drake at top, Transform(zoom=2.0)
     buyer_drake "And what about the ‘sex master’ part?"
 
     show rietman_serious_body
@@ -185,7 +192,7 @@ label start:
 label sauna_story:
 
     scene bg finnish_sauna
-    show young_rietman at truecenter
+    show y_rietman_bar at truecenter
 
     rietman "Ah, the sauna on nude day... A place of warmth, steam, and opportunity."
     "The air was thick with mist, laughter, and the occasional flirtatious glance."
@@ -195,8 +202,11 @@ label sauna_story:
     spa_girl1 "Oh my, a new face! Welcome, traveler."
     show spa_girl2 at linker_onderhoek, Transform(zoom=1.5), Position(yanchor=1.0, ypos=0.75)
     spa_girl2 "You look weary, are you okay handsome?!"
-    rietman "Ladies, please, no need for introductions. I am but a humble merchant, seeking relaxation."
+    rietman "Ladies, ladies, please.., no need for introductions. I am but a humble merchant, seeking relaxation."
     "The women giggled, their eyes full of curiosity."
+    "they had sex every night for a thousand nights"
+    "and it was great and they lived happliy after after"
+    "the end"
 
     # More steamy interactions can follow...
 

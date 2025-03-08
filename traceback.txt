@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 195, in script
-    Ivanka "Oh my, a new face! Welcome, traveler."
-Exception: Sayer 'Ivanka' is not defined.
+  File "game/script.rpy", line 170, in script
+    show y_rietman_bar linker_onderhoek
+Exception: Image 'y_rietman_bar' does not accept attributes 'linker_onderhoek'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 195, in script
-    Ivanka "Oh my, a new face! Welcome, traveler."
-  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Ivanka' is not defined.
+  File "game/script.rpy", line 170, in script
+    show y_rietman_bar linker_onderhoek
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'y_rietman_bar' does not accept attributes 'linker_onderhoek'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.3.24111502
 RietmanOrigins 1.0
-Sat Mar  8 09:55:49 2025
+Sat Mar  8 12:14:17 2025
