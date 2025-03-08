@@ -101,7 +101,9 @@ label start:
     buyer_kalimero "Wait, are you saying—?"
 
     hide blackies
-    show blackies_peniskoker at rechter_onderhoek
+    show drake at rechter_onderhoek
+    show rietman_cool at linkse_onderhoek
+    show blackies_peniskoker at truecenter
     shadow_man "Tell them, Ronnie. Tell them how you became a liquidator. A legend. A man feared in whispers."
 
     rietman "A master hustler, a dealmaker, a liquidator of both assets and... problems."
