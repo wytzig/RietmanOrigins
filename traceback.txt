@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    show drake at Transform(zoom=1.5, right)
+SyntaxError: positional argument follows keyword argument (game/script.rpy, line 23)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    show drake at Transform(zoom=1.5, right)
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "C:\Users\Admin\Downloads\renpy-8.3.3-sdk\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: positional argument follows keyword argument (game/script.rpy, line 23)
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.3.24111502
+RietmanOrigins 1.0
+Sat Mar  8 02:19:33 2025
